@@ -1,0 +1,35 @@
+
+.newsContainer{
+    background-color: rgb(36, 35, 44);
+    padding-top: 20px;  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .newsdiv{ 
+        width: 90%;
+        .newContainer{
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(56, 57, 77);
+            height: 250px; 
+            margin-bottom: 20px;
+    
+            .new{
+                padding: 20px;
+                color: white;
+                display: flex;
+                .img-container{
+                    img{
+                        width: 200px;
+                        height: 150px;
+                    }
+                }
+                .newtext{
+                    margin-left: 30px;
+                }
+            
+            }
+        }
+    }
+}
