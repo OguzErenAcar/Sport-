@@ -10,22 +10,38 @@
             border-radius: 20px;
             display: flex;
             align-items: center;
-            background-color:  rgb(56, 57, 77);
-            height: 250px; 
-            margin-bottom: 20px;
+            background-color:  #454946;
+              margin-bottom: 20px;
     
             .new{
-                padding: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+                padding-top:120px;
+                padding-bottom: 120px;
                 color: white;
                 display: flex;
+                @media screen and (max-width: 600px) {
+                    display: block; 
+                }
+
                 .img-container{
                     img{
+                        @media screen and (max-width: 600px) {
+                            display: block;
+                            margin: auto;
+                            
+                        }
                         width: 200px;
                         height: 150px;
                     }
                 }
                 .newtext{
                     margin-left: 30px;
+                    @media screen and (max-width: 600px) {
+                        display: block;
+                        margin-top: 60px;
+                        
+                    }
                 }
             
             }

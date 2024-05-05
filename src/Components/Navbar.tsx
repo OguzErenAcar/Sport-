@@ -23,6 +23,7 @@ function Navbar() {
         (<Link className="category" key={j} to={item.path}>{item.id}</Link>)
       ))}      
       </div>
+       
     </div>
     </div>
   );

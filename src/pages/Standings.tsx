@@ -57,8 +57,8 @@ function Standings() {
 
   return (
     <div className="standingsContainer">
-      <div className="standings">
-        <table className="table bg-waring table-hover table-sm">
+      <div className="standings table-responsive">
+        <table className="table bg-waring table-hover ">
           <thead>
             <tr key="header">
               <th scope="col">Sıra</th>
