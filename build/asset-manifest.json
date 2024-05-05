@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.3a6e1ef7.css",
-    "main.js": "/static/js/main.062b6404.js",
+    "main.css": "/static/css/main.e8a054a8.css",
+    "main.js": "/static/js/main.f449f2f7.js",
     "static/media/stad.jpg": "/static/media/stad.00ef39bb731ff16e2894.jpg",
     "index.html": "/index.html",
-    "main.3a6e1ef7.css.map": "/static/css/main.3a6e1ef7.css.map",
-    "main.062b6404.js.map": "/static/js/main.062b6404.js.map"
+    "main.e8a054a8.css.map": "/static/css/main.e8a054a8.css.map",
+    "main.f449f2f7.js.map": "/static/js/main.f449f2f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a6e1ef7.css",
-    "static/js/main.062b6404.js"
+    "static/css/main.e8a054a8.css",
+    "static/js/main.f449f2f7.js"
   ]
 }
