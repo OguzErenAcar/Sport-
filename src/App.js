@@ -10,10 +10,12 @@ function App() {
   return (
     <div className="App"> 
       <Navbar/>
+      <div className="d-flex justify-content-center">
       <Routes>
         { router.map((item,j)=>(
         <Route key={j}  {...item}>   </Route>)) }
       </Routes>
+      </div>
       <LeaguesList/>
       <Footer/>
     </div>

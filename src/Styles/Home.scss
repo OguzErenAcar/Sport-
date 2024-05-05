@@ -1,51 +1,78 @@
-@mixin container-fluid{
-	padding-right: 100px;
-    padding-left: 100px;
+@mixin container-fluid {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
-.home { 
-  .topdiv {
-    height: 600px;
-    background-color: rgb(56, 57, 77);
+.home {
+  width: 100%;
+  .topContainer{  
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
-    justify-content: space-between;
+   
     align-items: center;
-    width: 100%;
-    @include container-fluid;
-
-      .carousel {
-        display: flex;
-        align-items: center;
-        width: 55%;
-        height: 100%;
-      }
-      .matchesTable {
-        width: 45%;
-        display: flex;
-        justify-content: center;
-      }
-  
-  }
-  .lastnews {
-
-      height: 800px;
-      background-color: #ffbf2a;
-      display: grid;
-      grid-template-columns:1fr 1fr 1fr ;
-      row-gap: 0px; 
-    .lastnew{ 
-        display: flex;
-        justify-content: center; 
-        margin-top: 20px;
-        .newcontent{    
-            height: 310px;
-            width: 85%;
-            img{ 
-              height: 95%;
+    justify-content: center;
+    .topdiv{
+      width: 90%;
+      display: flex;
+      @media screen and (max-width: 1000px) { 
+        display: block;
+        }
+      justify-content: space-between;
+      align-items: center;
+      .CarouselCont{ 
+        width: 45%; 
+        @media screen and (max-width: 1000px) { 
+        width: 100%; 
+        }
+          .carouselItem{ 
+            img{  
+              display: block;
+              margin: auto;
+              height: 500px;
               width: 100%;
             }
-            
+          }
+      }
+      .MatchesTableCont{
+        width: 45%; 
+        @media screen and (max-width: 1000px) { 
+          width: 100%; 
+          }
+        .table{ 
+          margin-top: 20px;
+          text-align: center; 
+          th{
+            color: white;
+            background-color: #333533;
+          }
+          td{
+            color: white;
+            background-color: #202020;
+          }
         }
+      }
+    }
+  }
+ 
+  .lastnews {
+    height: 800px;
+    background-color: #ffbf2a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0px;
+    .lastnew {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      .newcontent {
+        height: 310px;
+        width: 85%;
+        img {
+          height: 95%;
+          width: 100%;
+        }
+      }
     }
   }
 }

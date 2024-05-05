@@ -1,17 +1,25 @@
 import React from 'react'
 import Navbar from '../Components/Navbar' 
 import LastNews from '../Components/Home/LastNews'
-import MatchesTable from '../Components/Home/MatchesTable'
-import Carousel from '../Components/Home/Carousel'
+import MatchsTable from '../Components/Home/MatchsTable'
+import Carousel_ from '../Components/Home/Carousel'
 
 function Home() {
   return (
-    <div className='home'> 
+    <div className='home'>  
+    <div className='topContainer'>
       <div className='topdiv'>
-      <Carousel/>
-      <MatchesTable/>
+        <div className='CarouselCont'>
+         <Carousel_/>
+        </div>
+        <div className='MatchesTableCont'>
+          <label style={{ display:"block",marginLeft:30,marginTop:60,textAlign:'center',color:"white",fontSize:55}}>Matchs</label>
+        <MatchsTable/>
+        </div> 
       </div>
+    </div>
       <LastNews/>
+   
     </div>
   )
 }

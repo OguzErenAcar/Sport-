@@ -37,9 +37,9 @@ function Standings() {
   };
 
   return ( 
-      <div className=" ">
-        <div className=" ">
-          <table className="table  table-hover table-sm">
+      <div className="standingsContainer">
+        <div className="standings">
+          <table className="table bg-waring table-hover table-sm">
             <thead >
               <tr key="header">
                 <th scope="col">Sıra</th>
@@ -58,8 +58,8 @@ function Standings() {
               {standings.length > 0 ? (
                 standings.map((item, j) => (
                   <tr key={j}>
-                    <td scope="row">{item.rank}</td>
-                    <td scope="row">{item.team.name}</td>
+                    <td>{item.rank}</td>
+                    <td>{item.team.name}</td>
                     <td>{item.all.played}</td>
                     <td>{item.all.win}</td>
                     <td>{item.all.draw}</td>
@@ -71,7 +71,8 @@ function Standings() {
                   </tr>
                 ))
               ) : (
-                <tr></tr>
+                <tr> 
+                </tr>
               )}
             </tbody>
           </table>
