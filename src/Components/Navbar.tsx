@@ -1,5 +1,5 @@
 import React from "react";
-import { router } from "../Routes";
+import { router } from "../Routes"
 import { Link } from "react-router-dom";
 
 function Navbar() {

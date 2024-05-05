@@ -21,12 +21,15 @@
       justify-content: space-between;
       align-items: center;
       .CarouselCont{ 
+        border: 10px solid;
+        border-radius: 4%;
         width: 45%; 
         @media screen and (max-width: 1000px) { 
         width: 100%; 
         }
           .carouselItem{ 
             img{  
+              border-radius: 3%;
               display: block;
               margin: auto;
               height: 500px;

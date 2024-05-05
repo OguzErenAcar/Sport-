@@ -1,15 +1,15 @@
 import React from 'react'
 import axios from 'axios'
-  function Request(url,headers={},params={},data=false,method="GET") {
+  function Request(url:string,headers={},params={},data={},method="GET") {
 
         return new Promise(async(resolve,reject)=>{
-            const options={
+            const options:any={
                 method,
                 url,
                 headers,
                 params
             }
-            if(data)
+            if(JSON.stringify(data) !== '{}')
             options.body= JSON.stringify(data)
 
             const response = await axios.request(options)
@@ -39,5 +39,5 @@ import axios from 'axios'
 //     })
 }
 
-export const GetRequest=(url,headers,params)=> Request(url,headers,params)
-export const PostRequest= (url,headers,params,data)=>Request(url,headers,params,data,"POST")
+export const GetRequest=(url:string,headers:object,params:object)=> Request(url,headers,params)
+export const PostRequest= (url:string,headers:object,params:object,data:object)=>Request(url,headers,params,data,"POST")

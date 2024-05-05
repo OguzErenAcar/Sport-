@@ -5,7 +5,7 @@ const headers={
     'x-rapidapi-host': 'api-football-v1.p.rapidapi.com'
 }
 
-export const getStanding= (params)=>{
+export const getStanding= (params:object)=>{
     
     return  GetRequest(
         'https://api-football-v1.p.rapidapi.com/v3/standings',
@@ -14,7 +14,7 @@ export const getStanding= (params)=>{
     )
 }
 
-export const getNextMatches=(params)=>{
+export const getNextMatches=(params:object)=>{
     
     return GetRequest(
         'https://api-football-v1.p.rapidapi.com/v3/fixtures',
