@@ -15,7 +15,7 @@ https://sportpluss.netlify.app
 
 ![Screenshot of a public channel](https://i.hizliresim.com/ew5tuor.png)
 
-#Usage   
+# Usage   
 Last branch is build so you must build . then :
 
 ```shell
