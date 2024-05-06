@@ -4,7 +4,7 @@ Written with TypeScript a sport page. Admin panel and backend requiests not crea
 template . 
 
 # Used Technologies
--Javascript ,Typescript ,React
+- Javascript ,Typescript ,React
 - Boostrap , Scss , Formik
 - Axios
 - react-router-dom
